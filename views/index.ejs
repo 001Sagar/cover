@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="css/style.css">
+<div class="container">
+    <div class="heading">
+        <h1>Recovero Blogs</h1>
+        <!-- <a class="btn btn_Success" href="/article/new">New Article</a> -->
+        <a class="btn btn-info" href="/article/new">  <button class="btn btn-info" type="New">Add a new Article</button></a>
+    </div>
+
+    
+      <!-- <button type="submit"> Approved</button>
+      <button type="submit"> Pending</button>   -->
+    
+    <% for (let post of article) {%>
+
+        <div>
+            
+            <h2><%=post.title%></h2>
+            <p><%=post.desc%>
+            <%=post.info%></p>
+
+     <a id="create" href="/article/new"> <button type="" id="create"> create</button></a>
+
+
+     <!-- <button id="edit" type=""> edit</button> -->
+
+            
+    <a href="/article/delete/<%= post._id%>">  <button type=""> delete</button>  </a>
+      <a href="">  <button type=""> approved</button>  </a>
+        </div>
+    
+    <% } %>
+ 
+     
+
+</div>
+
+

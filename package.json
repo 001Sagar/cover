@@ -1,0 +1,25 @@
+{
+  "name": "covero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "author": "Sagar Arya",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "marked": "^4.2.3",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.7.4",
+    "nodemon": "^2.0.20",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
+    "slugify": "^1.6.5"
+  }
+}
